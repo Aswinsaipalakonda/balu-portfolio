@@ -23,7 +23,7 @@ A modern personal portfolio website built with React, TypeScript, and Tailwind C
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/balu-portfolio.git
+   git clone https://github.com/Aswinsaipalakonda/balu-portfolio.git
    ```
 2. Install dependencies:
    ```bash
