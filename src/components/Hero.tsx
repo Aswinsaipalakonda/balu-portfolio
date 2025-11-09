@@ -1,11 +1,14 @@
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/profile-image.jpg";
-import resume from "@/assets/BALU resume.pdf";
 
 const Hero = () => {
   const handleDownloadCV = () => {
-    window.open(resume, '_blank');
+    const url = 'https://drive.google.com/file/d/1HIVRTFf7NF5V4JAbw_63eBIm7NfuwC9D/view?usp=sharing';
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    if (newWindow) {
+      newWindow.opener = null;
+    }
   };
 
   return (
@@ -34,7 +37,7 @@ const Hero = () => {
               className="gradient-button text-white font-semibold px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg rounded-full hover:scale-105 transition-all duration-300 shadow-lg w-full sm:w-auto"
             >
               <Download className="w-5 h-5 mr-2" />
-              Download CV
+              My Resume
             </Button>
           </div>
 
